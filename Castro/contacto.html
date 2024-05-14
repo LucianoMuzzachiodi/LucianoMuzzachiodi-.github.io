@@ -1,0 +1,111 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Castro, inmobiliaria, merlo, san luis, contacto inmobiliaria">
+    <meta name="description" content="Agradecemos su interés por nuestra empresa y nuestros servicios. Envíenos su consulta y un miembro de nuestro equipo le responderá a la mayor brevedad.">
+    <title>Contacta con nosotros | Castro</title>
+    <link rel="stylesheet" href="../estilos/css/nuevoestilo.css">
+</head>
+<body>
+    <section class="body">
+        <header>
+            <nav>
+                <figure class="header">
+                    <a href="../index.html"><img class="header__logo" src="../img/Logo.jpg" alt="La puerta a una vida mejor"></a>
+                </figure>
+                <ul class="header__navegacion">
+                    <li class="nav__lista"><a href="./alquileres.html" class="footer__nav__color">ALQUILERES</a></li>
+                    <li class="nav__lista"><a href="./Seguros.html" class="footer__nav__color">SEGUROS</a></li>
+                    <li class="nav__lista"><a href="./contacto.html" class="footer__nav__color">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2 class="main__titulo2">Contacto</h2>
+            </article>
+            <article>
+                <p class="main__parrafo--contacto">
+                    Agradecemos su interés por nuestra empresa y nuestros servicios. Envíenos su consulta y un miembro de nuestro equipo le responderá a la mayor brevedad. Estaremos encantados de atenderle.
+                </p>
+            </article>
+            <hr class="main__linea">
+            <form action=" " method="get" enctype="text/plain" autocomplete="on">
+                <fieldset class="fieldset">
+                    <legend class="fieldset__legend"><b>Sus datos:</b></legend>
+                    <div class="fieldset__label">
+                        <label for="name"><b>Nombre:</b></label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="fieldset__label">
+                        <label for="lastname"><b>Apellido:</b></label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div class="fieldset__label">
+                        <label for="email"><b>E-mail:</b></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="fieldset__label">
+                        <label for="Telefono"><b>Teléfono</b></label>
+                        <input type="number" name="Telefono" id="Telefono" required>
+                    </div>
+                    <div class="fieldset__label">
+                        <label for="estado"><b>Estado civil:</b></label>
+                        <select name="estado" id="estado">
+                           <option value="s">Soltero/a</option>
+                           <option value="c">Casado/a</option>
+                        </select>
+                    </div>
+                    <div class="fieldset__label">
+                        <p>
+                            <b>Tenés 18 años o más?</b>
+                        </p>
+                        <label for="mayor">
+                            Si <input type="radio" name="edad" id="mayor" value="mayor">
+                        </label>
+                        <label for="menor">
+                            No <input type="radio" name="edad" id="menor" value="menor">
+                        </label>
+                    </div>
+                    <div class="fieldset__label">
+                        <label for="newsletter"><b>¿Desea recibir el Newsletter?</b></label>
+                        <input type="checkbox" name="newsletter" id="newsletter" value="recibir">
+                    </div>
+                    <div class="fieldset__label">
+                        <textarea name="Comentario" id="comentario" cols="30" rows="10">Comentarios</textarea>
+                    </div>
+                    <div class="fieldset__formulario--btn">
+                        <input class="fieldset__botones" type="reset" value="Limpiar formulario">
+                        <input class="fieldset__botones" type="submit" value="Enviar formulario">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <ul class="footer__nav">
+                    <li class="nav__lista"><a href="../index.html" class="footer__nav__color">Inicio</a></li>
+                    <li class="nav__lista"><a href="../castro/alquileres.html" class="footer__nav__color">Alquileres</a></li>
+                    <li class="nav__lista"><a href="../castro/Seguros.html" class="footer__nav__color">Seguros</a></li>
+                </ul>
+            </nav>
+            <div class="footer__logos">
+                <Section class="main footerlogos__enlace">
+                    <a class="footer__logos__enlace" href="https://www.facebook.com/inmobiliariacastro" target="framename"><img src="../img/facebook.png" alt="Facebook" class="facebook"></a>
+                    <a class="footer__logos__enlace" href="https://www.instagram.com/castroinmobiliaria/?hl=es" target="framename"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a class="footer__logos__enlace" href="https://www.youtube.com/channel/UC2NGbojWQuMBjfRnfjABTNQ" target="framename"><img src="../img/youtube.png" alt="YouTube"></a>
+                    <a class="footer__logos__enlace" href=""><img src="../img/whatsapp.png" alt="whatsapp"></a>
+                </Section>
+                <nav class="main">
+                    <p class="footer__logos__up"><a href="#"><img src="../img/up.png" alt="Arriba"></a></p>
+                </nav>
+                <section class="main">
+                    <p class="footer__logos__copyright">Copyright © Castro Inmobiliaria 2024</p>
+                </section>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
