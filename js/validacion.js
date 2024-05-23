@@ -21,9 +21,9 @@ function validar(){
     const apellido = document.getElementById('lastname');
     const email = document.getElementById('email');
     const telefono = document.getElementById('telefono');
-    //const estado = document.getElementById('estado');
-
-console.log(nombre.value);
+    const civil = document.getElementById('estado');
+    
+    
 if(nombre.value == "" || !regExpNombre.test(nombre.value)){
     const spanError = document.createElement('span');
     spanError.textContent = "*Debe ingresar sin números, no puede superar los 9 carcteres)";
@@ -40,7 +40,6 @@ if(nombre.value == "" || !regExpNombre.test(nombre.value)){
 }
 
 
-console.log(apellido.value);
 if(apellido.value == "" || !regExpApellido.test(apellido.value)){  
     const spanError = document.createElement('span');
     spanError.textContent = "*Debe ingresar sin números, no puede superar los 9 carcteres)";
@@ -55,7 +54,6 @@ if(apellido.value == "" || !regExpApellido.test(apellido.value)){
 }
 
 
-console.log(email.value);
 if(email.value == "" || !regExpEmail.test(email.value)){
     const spanError = document.createElement('span');
     spanError.textContent = "*E-mail inválido";
@@ -68,7 +66,8 @@ if(email.value == "" || !regExpEmail.test(email.value)){
    
    flagError = true;
 }
-console.log(telefono.value);
+
+
 if(telefono.value && !regExpTelefono.test(telefono.value)){
     const spanError = document.createElement('span');
     spanError.textContent = "*Teléfono inválido";
@@ -85,12 +84,12 @@ if(telefono.value && !regExpTelefono.test(telefono.value)){
 
 if(!flagError){
     let texto = ''
-    texto = `Hola ${nombre.value} ${apellido.value}, no pondremos en contacto por las vias que nos avilitastes para darte información sobre tu inquietud, Gracias por comunicarte con nosotros. Teléfono ${telefono.value}, E-mail ${email.value}.`
+    texto = `- Hola ${nombre.value} ${apellido.value}, nos pondremos en contacto por las vias que nos avilitastes para darte información sobre tu inquietud, Gracias por comunicarte con nosotros. Tú Teléfono es ${telefono.value}, el E-mail es ${email.value} y Tú Estado Civil es ${civil.value}. Saludos.`;
     
     const li = document.createElement('li');
     li.textContent = texto;
     const ul = document.getElementById("list");
-    console.log(ul);
+   /* console.log(ul);*/
     ul.appendChild(li);
 
     nombre.value = '';
