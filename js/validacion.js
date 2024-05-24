@@ -22,7 +22,7 @@ function validar(){
     const email = document.getElementById('email');
     const telefono = document.getElementById('telefono');
     const civil = document.getElementById('estado');
-    
+
     
 if(nombre.value == "" || !regExpNombre.test(nombre.value)){
     const spanError = document.createElement('span');
@@ -84,7 +84,7 @@ if(telefono.value && !regExpTelefono.test(telefono.value)){
 
 if(!flagError){
     let texto = ''
-    texto = `- Hola ${nombre.value} ${apellido.value}, nos pondremos en contacto por las vias que nos avilitastes para darte información sobre tu inquietud, Gracias por comunicarte con nosotros. Tú Teléfono es ${telefono.value}, el E-mail es ${email.value} y Tú Estado Civil es ${civil.value}. Saludos.`;
+    texto = `- Hola ${nombre.value} ${apellido.value}, nos pondremos en contacto por las vías que nos habilitaste para darte información sobre tu inquietud, Gracias por comunicarte con nosotros. Tú Teléfono es ${telefono.value}, el E-mail es ${email.value} y Tú Estado Civil es ${civil.value}. Saludos.`;
     
     const li = document.createElement('li');
     li.textContent = texto;
@@ -96,8 +96,6 @@ if(!flagError){
     apellido.value = '';
     email.value = '';
     telefono.value = '';
-
-
 }
 
 return false;
