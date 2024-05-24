@@ -197,6 +197,7 @@ body {
 .main__imagenportada {
   width: 34.375rem;
   height: 21.875rem;
+  padding-top: 7px;
 }
 .main__imagentuluga {
   width: 21.875rem;
